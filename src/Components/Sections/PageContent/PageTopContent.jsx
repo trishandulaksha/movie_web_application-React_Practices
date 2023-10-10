@@ -2,7 +2,7 @@
 import pixel from "../../../Images/Spsweepers.jpg";
 import StarIcon from "@mui/icons-material/Star";
 
-const BoddyTop = () => {
+const PageTopContent = () => {
   const maxWidth = window.innerWidth;
 
  
@@ -57,4 +57,4 @@ const BoddyTop = () => {
   );
 };
 
-export default BoddyTop;
+export default PageTopContent;

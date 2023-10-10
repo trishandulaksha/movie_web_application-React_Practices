@@ -9,7 +9,7 @@ const FilmInfo = () => {
   const {setSearchData} = useContext(searchMovie);
 
  
-  useEffect(() => {
+  useEffect(() => {  
     if (inputdata) {
       const getResult = async () => {
         const url = `https://imdb-search2.p.rapidapi.com/${inputdata}`;

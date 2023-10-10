@@ -72,7 +72,7 @@ export const trdMvArrray = [
   },
 ];
 
-const maxWidth = window.innerWidth;
+const maxWidth = window.innerWidth; 
 
 const TrendingMovie = () => {
 

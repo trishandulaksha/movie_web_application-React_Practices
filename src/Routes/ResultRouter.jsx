@@ -1,35 +1,32 @@
-import React from 'react'
-import Main from '../Components/MainComponent/Main'
-import MainBody from '../Components/Section/MainBody'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import React from "react";
 
 
-import SearchResult from '../Components/MainComponent/SearchResult'
-import FilmInfo from '../Components/MainComponent/FilmInfo'
-import FilmDecription from '../Pages/FilmDecription'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 
 
+import FilmDecriptionPage from "../Pages/FilmDecriptionPage";
+import MainLayout from "../Components/Features/MainLayout";
+import MainSection from "../Components/Sections/MainSection";
+import SearchResult from "../Components/Features/SearchResult";
+import FilmInfo from "../Components/Features/FilmInfo";
 
 const ResultRouter = () => {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<Main />}>
-        <Route index element={<MainBody />} />
-        
-        <Route element={<FilmInfo/>}  >
-              <Route path='search' element={<SearchResult/>}/>
-              
-        </Route>    
-          <Route path='FilmDescription' element={<FilmDecription/>}/>
-      </Route>
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<MainSection />} />
 
-        
-  )
-}
+          <Route element={<FilmInfo />}>
+            <Route path="search" element={<SearchResult />} />
+          </Route>
+          <Route path="FilmDescription" element={<FilmDecriptionPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default ResultRouter
+export default ResultRouter;

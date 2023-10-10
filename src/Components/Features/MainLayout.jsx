@@ -1,13 +1,13 @@
 import React from 'react'
-import HeaderSection from '../Section/HeaderSection'
-import Footersection from '../Section/Footersection'
+import HeaderSection from '../Sections/HeaderSection'
+import Footersection from '../Sections/Footersection'
 
 import InputDataContext from '../../Context/InputDataContext'
 
 import { Outlet } from 'react-router-dom'
 
 
-const Main = () => {
+const MainLayout = () => {
   return (
     <div>
       <InputDataContext>
@@ -20,4 +20,4 @@ const Main = () => {
   )
 }
 
-export default Main
+export default  MainLayout

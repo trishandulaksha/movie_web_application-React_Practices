@@ -1,14 +1,15 @@
 import { useContext } from "react"
 import { FilmData, searchMovie } from "../../Context/InputDataContext";
-import { TrendMovUnit } from "../Section/BodySection/BodyCenter/TrendingMovie";
+
 import { useNavigate } from "react-router-dom";
+import { TrendMovUnit } from "../Sections/PageContent/PageCenter/TrendingMovie";
 
 
 
 
 
 const SearchResult = () => {
-
+ 
     const {searchData} = useContext(searchMovie)
     const maxWidth = window.innerWidth;
     const {setFilmData} = useContext(FilmData)

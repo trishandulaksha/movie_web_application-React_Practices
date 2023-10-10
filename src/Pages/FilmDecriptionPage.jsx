@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { FilmData } from "../Context/InputDataContext";
 
-const FilmDecription = () => {
+const FilmDecriptionPage = () => {
   const { filmData } = useContext(FilmData);
 
   return (
@@ -32,4 +32,4 @@ const FilmDecription = () => {
   );
 };
 
-export default FilmDecription;
+export default FilmDecriptionPage;
